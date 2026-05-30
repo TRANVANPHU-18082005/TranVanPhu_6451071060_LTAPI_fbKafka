@@ -40,7 +40,13 @@ FB_APP_SECRET=your_app_secret
 FB_VERIFY_TOKEN=your_verify_token
 FB_API_VERSION=v19.0
 FAKE_MODE=false
+REDIS_HOST=redis
+REDIS_PORT=6379
+# Alternatively you can set a full connection URL, e.g. redis://:password@hostname:6379
+# REDIS_URL=redis://localhost:6379
 
+# Idempotency keys TTL in seconds (default 86400 = 1 day)
+IDEMPOTENCY_TTL_SECONDS=86400
 # AI CONFIG
 AI_PROVIDER=GEMINI
 GEMINI_API_KEY=your_gemini_api_key
